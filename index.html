@@ -1,126 +1,187 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>نمایندگی خسرو مسفروش - بیمه ایران</title>
-  <meta name="description" content="مشاوره و ارائه خدمات بیمه عمر، درمان، خودرو و مسئولیت — نمایندگی بیمه ایران">
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بیمه ایران - نمایندگی مسفروش</title>
 
-  <style>
-    body {
-      font-family: "Vazirmatn", sans-serif;
-      margin: 0;
-      background: #ffffff;
-      color: #232323;
-    }
+    <style>
+        body {
+            font-family: "Tahoma";
+            background: #f5f5f5;
+            margin: 0;
+            color: #222;
+        }
 
-    header {
-      background: #065e48;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding: 15px;
-      gap: 12px;
-    }
+        /* آرم شناور شبیه ChatGPT اما آرم بیمه ایران */
+        .floating-logo {
+            position: fixed;
+            top: 12px;
+            left: 12px;
+            width: 80px; /* اندازه متوسط */
+            height: 80px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/c/c8/Iran_insurance_logo.svg') no-repeat center center;
+            background-size: contain;
+            z-index: 999;
+        }
 
-    header img {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      background: white;
-      padding: 3px;
-    }
+        /* مخفی کردن لوگو در موبایل */
+        @media (max-width: 750px){
+            .floating-logo {
+                display: none;
+            }
+        }
 
-    .logoTop {
-      width: 85px;
-      position: fixed;
-      right: 20px;
-      top: 10px;
-      background: white;
-      border-radius: 50%;
-      padding: 4px;
-      box-shadow: 0 0 10px #ddd;
-    }
+        header {
+            background: linear-gradient(#055d2b, #033a1a);
+            color: white;
+            text-align: center;
+            padding: 28px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    section {
-      padding: 25px;
-      line-height: 30px;
-    }
+        .header-logo {
+            width: 95px;
+            margin-right: 12px;
+        }
 
-    .contact {
-      background: #e4fff5;
-      padding: 25px;
-      border-right: 5px solid #065e48;
-    }
+        nav {
+            background-color: #055d2b;
+            padding: 12px;
+            text-align: center;
+        }
 
-    .footer-sec {
-      background: #065e48;
-      color: white;
-      padding: 20px;
-    }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            font-weight: bold;
+        }
 
-    .insta {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      padding-top: 6px;
-    }
+        .container {
+            width: 92%;
+            max-width: 900px;
+            margin: auto;
+            padding-top: 20px;
+        }
 
-    .insta svg {
-      width: 22px;
-    }
-  </style>
+        .section {
+            background: white;
+            padding: 18px;
+            margin-top: 18px;
+            border-radius: 9px;
+            border-right: 7px solid #055d2b;
+        }
+
+        .section h2 {
+            color: #055d2b;
+            margin-top: 0;
+        }
+
+        /* سوالات - باز و بسته شونده */
+        .faq button {
+            width: 100%;
+            background: #055d2b;
+            color: white;
+            cursor: pointer;
+            padding: 11px;
+            border: none;
+            margin-top: 6px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .answer {
+            display: none;
+            padding: 8px;
+            background: #e5f1e7;
+            margin-top: 4px;
+            border-radius: 6px;
+        }
+
+        footer {
+            background: #033a1a;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact {
+            background: #c5e7d2;
+            padding: 18px;
+            border-radius: 9px;
+        }
+    </style>
 </head>
-
 <body>
 
-  <!-- لوگو ثابت در بالا -->
-  <img class="logoTop" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Iran_insurance_logo.png">
+<!-- آرم بیمه ایران کنار سایت - فقط دسکتاپ -->
+<div class="floating-logo"></div>
 
-  <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Iran_insurance_logo.png">
-    <h2>نمایندگی مسفروش — بیمه ایران</h2>
-  </header>
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Iran_insurance_logo.svg" class="header-logo">
+    <h1>نمایندگی بیمه ایران - مسفروش</h1>
+</header>
 
-  <section>
-    <h3>📌 خدمات ما</h3>
-    <p>
-      ارائه انواع خدمات بیمه‌ای شامل:
-      بیمه عمر — بیمه خودرو — بیمه درمان تکمیلی — مسئولیت — آتش‌سوزی — حوادث — مهندسی  
-      با مشاوره رایگان و پشتیبانی دائمی
-    </p>
+<nav>
+    <a href="#benefits">مزایا</a>
+    <a href="#faq">سوالات</a>
+    <a href="#contact">تماس</a>
+</nav>
 
-    <h3>💡 چند متن تبلیغاتی</h3>
-    <p>🔹 آینده فرزندان خود را از همین امروز بسازید — با بیمه عمر</p>
-    <p>🔹 آرامش خیال، هزینه ندارد — برنامه‌ریزی دارد</p>
-    <p>🔹 بهترین زمان شروع بیمه عمر دیروز بود، دومین فرصت امروز است</p>
-  </section>
+<div class="container">
 
-  <section class="contact">
-    <h3>📞 تماس با ما</h3>
-    <p>شماره تماس: <strong>۰۹۱۳۴۷۲۷۲۳۸</strong></p>
-    <p>آدرس: کاشان — خیابان رجایی — پاساژ نجفی زاده</p>
-
-    <div class="insta">
-      <!-- آیکون اینستا -->
-      <svg viewBox="0 0 24 24">
-        <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 
-        5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 
-        1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 
-        3-3h10zm-5 3c-2.757 0-5 2.243-5 5s2.243 5 5 
-        5 5-2.243 5-5-2.243-5-5-5zm0 2c1.654 0 3 1.346 3 
-        3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm4.5-.25c-.414 
-        0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75z"/>
-      </svg>
-      <span>@BIMEIRANM</span>
+    <div class="section">
+        <h2>چرا بیمه عمر ایران؟</h2>
+        <p>بیمه عمر بهترین پشتوانه برای آینده خانواده، سرمایه‌گذاری و پوشش بیماری‌ها می‌باشد.</p>
     </div>
-  </section>
 
-  <footer class="footer-sec">
-    نمایندگی رسمی بیمه ایران — تمامی حقوق محفوظ است
-  </footer>
+    <div class="section" id="benefits">
+        <h2>مزایای بیمه عمر</h2>
+        <ul>
+            <li>وام بدون ضامن از اندوخته</li>
+            <li>پوشش بیماری های خاص</li>
+            <li>سرمایه مناسب در زمان بازنشستگی</li>
+            <li>معاف از مالیات</li>
+            <li>پوشش فوت و از کار افتادگی</li>
+        </ul>
+    </div>
+
+    <div class="section faq" id="faq">
+        <h2>سوالات پر تکرار</h2>
+
+        <button onclick="toggleAnswer('a1')">بیمه عمر از چه سنی امکان پذیر است؟</button>
+        <div class="answer" id="a1">از بدو تولد تا ۷۰ سالگی.</div>
+
+        <button onclick="toggleAnswer('a2')">آیا امکان افزایش مبلغ وجود دارد؟</button>
+        <div class="answer" id="a2">هر سال امکان افزایش یا کاهش مبلغ بیمه وجود دارد.</div>
+
+        <button onclick="toggleAnswer('a3')">وام بدون ضامن است؟</button>
+        <div class="answer" id="a3">بله از اندوخته شخص پرداخت می‌شود.</div>
+    </div>
+
+    <div class="section contact" id="contact">
+        <h2>تماس با ما</h2>
+        <p><strong>شماره تماس:</strong> ۰۹۱۳۴۷۲۷۲۳۸</p>
+        <p><strong>اینستاگرام:</strong> @BIMEIRANM</p>
+        <p><strong>آدرس:</strong> کاشان – خیابان رجایی – پاساژ نجفی‌زاده</p>
+    </div>
+
+</div>
+
+<footer>
+    نمایندگی رسمی بیمه ایران - مسفروش
+</footer>
+
+<script>
+function toggleAnswer(id) {
+    let x = document.getElementById(id);
+    x.style.display = (x.style.display === "block" ? "none" : "block");
+}
+</script>
 
 </body>
 </html>
